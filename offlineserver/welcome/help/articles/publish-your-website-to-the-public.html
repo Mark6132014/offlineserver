@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>
+OfflineServer Help Article - Publish Your Website To The Public
+</title>
+<meta charset="UTF-8">
+<style>
+html, body {
+font-family: Arial;
+}
+</style>
+</head>
+<body>
+<center>
+<h2>
+OfflineServer Help Article
+</h2>
+<p>
+Publish Your Website To The Public
+</p>
+</center>
+<hr>
+<h2>
+Publish Your Website To The Public
+</h2>
+<p>
+In OfflineServer
+</p>
+<hr>
+<p>
+Publishing your website to the public with OfflineServer is quite simple.
+<br>
+If you want your website to be found locally only in your network, your private IP address is your default website address people can access.
+<br>
+OfflineServer is simple, it gives you a free DNS (Domain Name Server) hostname that your local DNS Server can add.
+<br>
+If you want your website to the public, you need a public IP attached to the computer that is hosting the OfflineServer Website.
+<br>
+</p>
+<blockquote>
+<h2>Your port forwaring should be like this:</h2>
+<p>SERVICE NAME: WHATEVER YOU WANT TO NAME IT</p>
+<br>
+<p>EXTERNAL PORT: 80 (or) 443</p>
+<br>
+<p>INTERNAL PORT: 80 (or) 443</p>
+<br>
+<p>INTERNAL IP: (the ip address that is hosting the OfflineServer Website)</p>
+<br>
+<p>SOURCE IP: (your public ip or leave it blank for better compatibility)</p>
+</blockquote>
+<br>
+<p>That's how you do it. You can use a Windows Server as a DNS Server to assign a PUBLIC hostname.</p>
+<br>
+<blockquote>
+<h2>Your DNS Server should have this in "Forward Lookup Zones"</h2>
+<p>Forward lookup zone name: (YOUR WEBSITE HOSTNAME LIKE offlineexample.org)</p>
+<br>
+<p>Should have a A record in the forward lookup zone, no dynamic updates for the forward lookup zone please, and make the forward lookup zone primary</p>
+<br>
+<p>A Record Name: nothing (if you want it as a subdomain you can)</p>
+<br>
+<p>A Record FQDN should be the same as your forward lookup zone name (or your public hostname if you want to call it that way)</p>
+<br>
+<p>A Record IP address: (the ip address that is hosting your offlineserver website, if the ip is tied to a public ip too, use that for good public use)</p>
+<br>
+<p>You are done!</p>
+</blockquote>
+<br>
+<p>If you assign a free domain to your OfflineServer website, it assigns it in a system file called "hosts". It uses 127.0.0.1 to point to the real ip address you want</p>
+<br>
+<p>to host your offlineserver website at. This will really work in Windows Mobile Hotspot. If you have a free hostname (like offlineexample.org) assigned and you turn on</p>
+<br>
+<p>Mobile Hotspot to the host of your offlineserver website, offlineexample.org would work for anyone who connects to your mobile hotspot!</p>
+<hr>
+<footer>
+<center>
+<h4>
+Links:
+</h4>
+<br>
+<a href="javascript:history.back()">Go Back</a>
+<br>
+<a href="http://admin.offlineserver.net/welcome/help/info.html">Go Back to Help Page</a>
+</center>
+</footer>
+</body>
+</html>
