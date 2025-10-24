@@ -1,1 +1,0 @@
-chrome-extension://ecnphlgnajanjnkcmbpancdjoidceilk/src/content_global.js
