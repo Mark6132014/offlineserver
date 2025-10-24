@@ -1,0 +1,69 @@
+html, body {
+font-family: Arial;
+background: whitesmoke;
+margin: 0;
+padding: 0;
+}
+header {
+background: lightgrey;
+}
+header a {
+	color: black;
+	text-decoration: underline;
+	font-size: 1.5em;
+	text-decoration-color: transparent;
+	transition: ease-in-out 0.2s;
+}
+header a:hover {
+	text-decoration-color: darkred;
+}
+button {
+	color: white;
+	background: #3393df;
+	border-radius: 3px;
+	text-decoration: underline;
+	font-size: 1.5em;
+	text-decoration-color: transparent;
+	transition: ease-in-out 0.2s;
+	height: 10%;
+	width: 20%;
+	padding: 10px;
+}
+button:hover {
+	text-decoration-color: white;
+}
+.newsArticles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* evenly split into 3 columns */
+    gap: 20px; /* space between articles */
+    padding: 20px; /* reduced from 20% to avoid overflow */
+}
+
+.newsArticles article {
+    padding: 20px; /* reduced from 50% to avoid bloating each article */
+    border-radius: 5px;
+    background: lightgrey;
+    box-sizing: border-box; /* ensures padding doesn't break layout */
+	transition: ease-in-out 0.2s;
+	cursor: pointer;
+}
+
+.newsArticles article:hover {
+	box-shadow: 0 0 20px black;
+}
+
+.newsArticles article img {
+    height: auto;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.newsArticles article h3 {
+    color: black;
+    text-align: left;
+}
+
+.newsArticles article p {
+    text-align: center;
+}

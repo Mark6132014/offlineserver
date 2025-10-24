@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>
+OfflineServer Watermark
+</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<div class="watermark">
+<div class="shadow" style="background: rgba(0,0,0,0.541);">
+<marquee style="width: 80%;"><p>Made by OfflineServer</p></marquee>
+<button onclick="location.assign('../editor/offlineserver.zip');">Start Now</button>
+</div>
+</div>
+<style>
+.watermark {
+background: url("../watermarkBG.png");
+color: white;
+border-bottom: 5vh solid purple;
+font-family: Arial;
+height: 95vh;
+width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+}
+.shadow {
+height: 95vh;
+width: 100%;
+}
+.watermark p {
+float: left;
+}
+.watermark button {
+height: 60px;
+width: 15%;
+background: purple;
+border: 1px solid black;
+border-radius: 20px;
+transition: ease-in-out 0.2s;
+color: white;
+position: relative;
+float: right;
+}
+.watermark button:hover {
+background: white;
+border: 1px solid purple;
+box-shadow: 0 0 10px black;
+color: black;
+font-size: 1.5em;
+cursor: pointer;
+}
+.watermark button:hover:after {
+opacity: 1;
+}
+.watermark button:after {
+content: "😊";
+transition: ease-in-out 0.2s;
+opacity: 0;
+}
+</style>
+<script>
+setInterval(() => {
+document.querySelector(".watermark p").innerHTML = document.querySelector(".watermark p").innerHTML.toLowerCase();
+setTimeout(() => {
+document.querySelector(".watermark p").innerHTML = document.querySelector(".watermark p").innerHTML.toUpperCase();
+setTimeout(() => {
+/* do nothing */
+}, 500);
+}, 500);
+}, 500);
+</script>
+</body>
+</html>

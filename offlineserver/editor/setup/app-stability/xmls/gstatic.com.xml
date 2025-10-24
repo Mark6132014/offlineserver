@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appcmd>
+    <SITE SITE.NAME="gstatic.com" SITE.ID="4" bindings="http/127.0.0.1:6510:" state="Unknown">
+        <site name="gstatic.com" id="4">
+            <bindings>
+                <binding protocol="http" bindingInformation="127.0.0.1:6510:" />
+            </bindings>
+            <limits />
+            <logFile />
+            <traceFailedRequestsLogging />
+            <applicationDefaults />
+            <virtualDirectoryDefaults />
+            <ftpServer>
+                <connections />
+                <security>
+                    <dataChannelSecurity />
+                    <commandFiltering>
+                    </commandFiltering>
+                    <ssl />
+                    <sslClientCertificates />
+                    <authentication>
+                        <anonymousAuthentication />
+                        <basicAuthentication />
+                        <clientCertAuthentication />
+                        <customAuthentication>
+                            <providers>
+                            </providers>
+                        </customAuthentication>
+                    </authentication>
+                </security>
+                <customFeatures>
+                    <providers>
+                    </providers>
+                </customFeatures>
+                <messages />
+                <fileHandling />
+                <firewallSupport />
+                <userIsolation>
+                    <activeDirectory />
+                </userIsolation>
+                <directoryBrowse />
+                <logFile />
+            </ftpServer>
+            <application path="/" applicationPool="gstatic.com">
+                <virtualDirectoryDefaults />
+                <virtualDirectory path="/" physicalPath="C:\inetpub\wwwroot\editor\backup\install\offline-websites\www.gstatic.com\www.gstatic.com" />
+            </application>
+        </site>
+    </SITE>
+</appcmd>
