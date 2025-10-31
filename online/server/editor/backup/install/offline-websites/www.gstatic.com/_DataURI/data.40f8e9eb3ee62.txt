@@ -1,0 +1,1 @@
+chrome-extension://ecnphlgnajanjnkcmbpancdjoidceilk/src/browser/open_with_kami.js

@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Redirecting...</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<script>
+        function getUrlParams() {
+    const params = {};
+    const queryString = window.location.search.substring(1);
+    const regex = /([^&=]+)=([^&]*)/g;
+    let m;
+    while (m = regex.exec(queryString)) {
+        params[decodeURIComponent(m[1])] = decodeURIComponent(m[2]);
+    }
+    return params;
+}
+    function getParam() {
+    const param = getUrlParams();
+	location.assign("https://tinyurl.com/" + param.id);
+}
+      getParam();
+	  </script>
+	  </body>
+	  </html>
