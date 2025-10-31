@@ -379,11 +379,11 @@ document.querySelector(".offlineserverCommunity #createPostBtn").addEventListene
 	setTimeout(() => {
 		let outputURL = document.querySelector(".offlineserverCommunity #output").innerHTML;
 		let outputID = outputURL.slice(20)
-		document.querySelector(".offlineserverCommunity #link").innerHTML = "ID: " + outputID + "<br>Here is the whole link: https://mark6132014.github.io/offlineserver/online/server/community/sq?id=" + outputID;
+		document.querySelector(".offlineserverCommunity #link").innerHTML = "ID: " + outputID + "<br>Here is the whole link: https://mark6132014.github.io/offlineserver/online/server/editor/community/sq?id=" + outputID;
 	}, 2000);
 });
 document.querySelector(".offlineserverCommunity #viewPost").addEventListener("click", () => {
 	let postInput = document.querySelector(".offlineserverCommunity #postID").value;
-	document.querySelector(".offlienserverCommunity #postViewer").src = "https://mark6132014.github.io/offlineserver/online/server/editor/community/sq?id=" + postInput;
+	document.querySelector(".offlineserverCommunity #postViewer").src = "https://mark6132014.github.io/offlineserver/online/server/editor/community/sq?id=" + postInput;
 });
 /* OfflineServer is always the best free web server out there. Have a good day! */
