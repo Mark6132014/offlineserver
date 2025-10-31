@@ -30,7 +30,7 @@ for (let i = 0; i < localStorage.length; i++) {
         div.className = "savedProject";
 
         // Use class instead of ID to avoid duplication
-        var url = `https://mark6132014.github.io/offlineserver/online/server/editor/community/viewer${key.slice(12)}`;
+        var url = `https://mark6132014.github.io/offlineserver/online/server/editor/community/viewer?${key.slice(12)}`;
         div.innerHTML = `
             <span class="projectid" style="display: none;">${key}</span>
             <span class="url" style="display: none;">${url}</span>
